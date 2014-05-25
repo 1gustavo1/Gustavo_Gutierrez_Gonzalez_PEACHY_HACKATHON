@@ -1,0 +1,62 @@
+
+<html>
+
+<!--
+4 Escribe un programa que use los APIs de Stripe,
+stamps.com
+y Mailchimp para un servicio de
+suscripción (ventas cíclicas).
+A.Un usuario podrá suscribirse ingresando su correo, sus datos de pago y envío en el menos
+numero de pasos posible. 
+-->
+
+
+<body>
+<head>
+<style>
+@import 'estilos.css'screen;
+</style>
+<body>
+<div id="Titulo2">
+Subscripcion a Peachy
+</div>
+<div id="formulario2">
+<form id="Mailchimp" method="POST" action=" inscribiracorreo.php">
+<label>Nombre</label><br><input type="text" name="nombre"><br>
+<label>Apellido</label><br><input type="text" name="apellido"><br>
+<label>Telefono</label><br><input type="text" name="telefono"><br>
+<label>E-mail</label><br><input type="text" name="correo"><br>
+<input type="submit" value="Suscribirse">
+</form>
+</div>
+<?
+require_once 'MCAPI.class.php';
+require_once 'config.inc.php';
+$objeto=new MCAPI($apikey);
+//inscribe nuevo cliente
+$merge_vars=array(
+'FNAME'=> $_POST['nombre'],
+'LNAME' => $_POST['apellido'],
+'PHONE' => $_POST['telefono']
+
+);
+$email=$_POST['correo'];
+$retval= $objeto->listSubscribe($listId,$email,$merge_vars);
+
+if($_POST['nombre']!=''){
+if($objeto->errorCode)
+{
+echo "<div id=\"Error\">";
+echo "No se puede subscribir<br>";
+echo "\tCodigo".$objeto->errorCode."\n";
+echo "\tCodigo".$objeto->errorMessage."\n";
+}else{
+echo "<div id=\"Error\">";
+echo "Subscrito";
+}
+echo "</div>";
+}
+?>
+
+</body>
+</html>
