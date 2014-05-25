@@ -1,0 +1,62 @@
+El sistema se podria realizar de la siguiente manera y respondera a la siguiente pregunta:
+Para saber:
+a)Quien me invito se realiza una busqueda : se busca mi clave unica en las subclaves de los demas usuarios y descartando los que tengan claves y subclaves iguales.
+b)A quien invite se realiza una busqueda: se busca mi subclave en la clave de los demas usuarios y descartando los que tengan la clave y la subclave son iguales.
+Propuesta de como realizar un sistema de recomendaciones.
+
+interaccion Usuario-Sistema
+1-El usuario se suscripbe 
+2- El sistema presenta la obcion de suscripcion nueva o por recomendacion
+3-El usuario elige la obcion de nueva
+3-El sistema solicita la informacion de tarjeta y personal.
+
+4-El sistema guarda su informacion persoanal como: correo, nombre etc.
+
+5-El sistema genera una clave unica, con la que le permitira identificar al usuario,contrasena, usuario, una subclave que cuando es la primera ves de suscripcion es la misma que la clave unica.
+
+6-El sistema guarda un id de tarjeta,id usuario,datos personales,fecha de subscripcion,correo,clave unica,subclave y un id de suscripto por obcion nueva.  
+7-El usuario elige su producto
+8-El sistema valida y guarda su orden
+
+9-El sistema envia pedido y correo de confirmacion.
+
+9-El Sistema presenta una opcion de recomendación.
+
+
+10-El usuario decide recomendar
+11-El sistema presenta una ventana,pidiendo correo de la persona a la que desea invitar y la clave unica. 
+
+12-El sistema envia un correo a la persona invitada con la clave del usuario que lo invito,asi como su nombre del dueno de la clave.
+
+13-El sistema guarda en la base de datos el intento de envio de recomendación.
+
+14-El sistema regresa a su pagina del usuario.
+
+
+15-El usuario invitado ingresa al sistema
+16-El sistema da 2 obciones nueva suscripcion o suscripcion por recomendacion
+17-El usuario elige suscripcion por recomendacion
+18-El sistema abre la ventana de suscripcion
+
+19-El sistema solicita los siguientes datos:
+20-clave unica(proporcionada por el correo de invitacion),datos de tarjeta y datos personales,
+
+21-El sistema realiza una busqueda de la clave unica si existe:
+
+22-El sistema aumenta el numero de invitados del dueno de la clave unica y aumenta los puntos del usuario(recompenza).
+
+23-El sistema valida la informacion del usuario como la tarjeta de credito.
+
+24-El sistema genera una subclave unica.
+
+25-El sistema guarda la clave unica(del que  te invito) ,guarda tu subclave,un identificador de suscripcion por recomendación. 
+
+26-El sistema manda a la pagina del usuario.
+
+27-Si la clave unica no existe:
+
+28-El sistema reporta la inexistencia de la clave y regresa ala pagina principal.
+
+
+
+
