@@ -1,0 +1,5 @@
+Puntos extra: Lista de casos en los que un sistema así podrá ser abusado por los usuarios y como mitigarías esos abusos.! 
+
+1. El usuario realize un pedido y lo cancele cuando este este por llegar
+2. El usuario solicite una cantidad inexistente en los inventarios de la empresa.
+3. En caso de clonacion de tarjeta donde alguie se suscribe con datos datos falsos.
