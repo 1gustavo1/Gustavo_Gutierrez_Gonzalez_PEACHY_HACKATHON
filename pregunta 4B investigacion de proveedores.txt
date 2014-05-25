@@ -18,11 +18,6 @@ Es el centro de distribución de más de un millón de productos, los negocios W
 API: La API de administración de 2Checkout ofrece una manera de automatizar los procesos de gestión de pedidos. La API de administración funciona junto con el Servicio de notificación instantánea que alivia la necesidad de iniciar sesión en la interfaz estándar.
 
 
-
-
-
-
-
 Proveedores de envió
 FedEx
 FedEx ofrece una extensa gana de servicios y herramientas para envió en México y envíos internacionales, puede enviar documentos, cajas o fletes, la entrega es rápida y confiable en más de 220 destinos en todo el mundo.
