@@ -1,0 +1,53 @@
+/*
+2.Escribe una consulta a una base de datos que regrese 
+una tabla con la relación Abuelo Nieto de una tabla de 
+Padre Hijo.
+!*/
+
+use prueba1;
+create table T1(padre varchar(20),hijo varchar(20));
+
+insert into T1 values ('Juan','Pedro'),('Pedro','Jesus'),('Raul','Josue')
+
+/*codigo en sqlserver*/
+/*Se creo una funcion para poder realizar la consulta*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+create function Abuelo_Nieto ( )  
+RETURNS 
+@Relacion_Abuelo_Nieto TABLE 
+(abuelo varchar(20),nieto varchar(20))
+AS
+BEGIN
+declare @A1 varchar(20);
+declare @N1 varchar(20);
+declare @A2 varchar(20);
+declare @N2 varchar(20);
+set @A1=NULL;
+set @N1=NULL;
+set @A2=NULL;
+set @N2=NULL;
+
+declare relacion2 cursor for select padre,hijo from T1;
+open relacion2;
+fetch relacion2 into @A1,@N1;
+while @@FETCH_STATUS=0
+begin
+select @A2=padre,@N2=hijo from T1 where padre=@N1 ;
+if @A1 is not  NULL and @N2 is not NULL
+begin
+insert into @Relacion_Abuelo_Nieto values(@A1,@N2)
+end
+set @A1=NULL;
+set @A2=NULL;
+set @N2=NULL;
+fetch relacion2 into @A1,@N1;
+end
+close relacion2
+deallocate relacion2 
+	RETURN 
+END
+GO
+
+/*Esta consulta dara el resultado pedido*/
+use prueba1
+select * from Abuelo_Nieto();
