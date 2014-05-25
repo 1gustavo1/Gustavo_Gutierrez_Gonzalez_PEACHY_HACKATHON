@@ -1,0 +1,96 @@
+
+/*
+Escribe un programa que use los APIs de Stripe,
+stamps.comy Mailchimp para un servicio de suscripción 
+(ventas cíclicas). 
+4A)Un usuario podrá suscribirse ingresando su correo, sus datos de pago y envío en el menos
+numero de pasos posible.
+!
+*/
+
+#formulario2{
+width:400px;
+padding-left:20px; margin-right:20px;
+border: 10px solid black;
+background-position: 50% 50%;
+float: left;
+
+}
+
+#formulario1{
+width:400px;
+padding-left:20px; margin-right:20px;
+background-position: 50% 50%;
+float: left;
+background-color:#CBBC31;
+
+border-right:5px solid black;
+border-left:5px solid black;
+border-top:5px solid black;
+border-bottom:5px solid black;
+
+border-right-color:black;
+border-left-color:black;
+border-top-color:black;
+border-bottom-color:black;
+/*padding-top:2em;*/
+}
+
+
+
+#Error{
+width:200px;
+padding-right:30px; margin-right:30px;
+border: 10px solid black;
+left:8em;
+float:left;
+}
+#Titulo2{
+background-color:#CBBC31;
+}
+
+#titulo1{
+/*
+displey:block;
+float:left;
+*/
+width:5cm;
+border-right-color:blue;
+border-left-color:blue;
+border-top-color:black;
+border-bottom-color:black;
+
+padding-top:2px;
+padding-bottom:2px;
+padding-left:2px;
+padding-right:2px;
+
+border-top:5px solid black;
+border-bottom:5px solid black;
+}
+
+input:hover{
+background-color:orange; 
+  color: white; 
+
+/*PAGINAS
+CSS
+http://www.mclibre.org/consultar/amaya/css/css_pseudoclases.html
+
+REDIREC
+http://blog.vermiip.es/2013/07/17/redireccionar-una-pagina-web-html-asp-javascript-y-php/
+
+CORREOS
+http://stackoverflow.com/questions/10830311/mailchimp-merge-vars-what-else-is-accepted-apart-from-fname-lname
+http://truelogic.org/wordpress/2012/07/28/integrate-the-mailchimp-api-with-your-php-application/
+
+
+STRIPE
+
+www.google.com.mx/url?sa=t&rct=j&q=&esrc=s&source=web&cd=10&ved=0CHYQFjAJ&url=http%3A%2F%2Fcode.tutsplus.com%2Ftutorials%2Fso-you-want-to-accept-credit-cards-online--net-25457&ei=T1eAU8CMAoGRqgaCh4BA&usg=AFQjCNGlAPc8x55JKmvezsiDJFx7avzR_g&sig2=LuIuJkzjW2NRCKSZJOe9TA&bvm=bv.67720277,d.b2k
+
+
+
+
+
+}
