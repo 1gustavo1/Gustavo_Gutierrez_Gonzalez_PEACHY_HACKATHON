@@ -1,0 +1,70 @@
+/*
+4.Escribe un programa que use los APIs de Stripe,
+stamps.com y Mailchimp para un servicio de
+suscripción (ventas cíclicas).
+A.Un usuario podrá suscribirse ingresando su correo, sus datos de pago y envío en el menos
+numero de pasos posible. 
+*/
+
+function stripeResponseHandler(status, response)
+{
+    if (response.error)
+    {
+        alert(response.error.message);
+    }
+    else
+    {  
+       
+        request.done(function(msg)
+        {
+            if (msg.result === 0)
+            {
+                alert("Exito");
+            }
+            else
+            {
+                alert("Problemas");
+            }
+        });
+ 
+       
+    }
+}
+
+
+function valida()
+{
+nombre=document.getElementById('first-name').value;
+apellido=document.getElementById('last-name').value;
+correo=document.getElementById('email').value;
+cuenta=document.getElementById('card-number').value;
+mes=document.getElementById('expiration-month').value;
+year=document.getElementById('expiration-year').value;
+codigo=document.getElementById('card-security-code').value;
+valida=0;
+
+if(nombre=='' || /^\s+$/.test(nombre) ){alert('Falta nombre'); valida=1;}else{}
+
+if(apellido=='' || /^\s+$/.test(apellido)){alert('Falta apellido'); valida=1;}else{}
+
+if(correo=='' || /^\s+$/.test(correo)){alert('Falta correo'); valida=1;}else{}
+if(isNaN(cuenta)|| /^\s+$/.test(cuenta)){alert('Falta cuenta'); valida=1;}else{} 
+
+if(mes=='' || /^\s+$/.test(mes)){alert('Falta mes'); valida=1;}else{}
+
+if(year=='' || /^\s+$/.test(year)){alert('Falta year');valida=1;}else{}
+if(codigo=='' || /^\s+$/.test(codigo)){alert('Falta codigo');valida=1;}else{}
+
+
+
+Stripe.createToken({number: cuenta,cvc: codigo,exp_month:mes,exp_year:year},stripeResponseHandler);
+
+
+if(valida==1 ){alert('Completa adecuadamente');return false;}
+else{alert('Validado');
+return true;}
+
+
+}
+
+
