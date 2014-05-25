@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<!--
+4 Escribe un programa que use los APIs de Stripe,
+stamps.com y Mailchimp para un servicio de
+suscripción (ventas cíclicas).
+A.Un usuario podrá suscribirse ingresando su correo, sus datos de pago y envío en el menos numero de pasos posible. 
+-->
+
+    <head>
+  <script src="scripts/jquery.js"></script>
+    <script src="https://js.stripe.com/v1/"></script>
+<script>Stripe.setPublishableKey('pk_0xT4IHiAt1NxoBDJlE2jfLnG5xWQv');</script>
+<script src="valida.js"></script>
+<style>
+@import 'estilos.css'screen;
+</style>
+</head>
+   <body>
+
+	<div id="titulo1">
+        <h2 name="x">Registro</h2>
+	</div>
+     <div id="formulario1"> 
+        <form id="buy-form" method="post" action="formulario01.php" onsubmit="valida()">
+             
+            <p class="form-label">Nombre:</p>
+            <input class="text" id="first-name" spellcheck="false"></input>
+             
+            <p class="form-label">Apellido:</p>
+            <input class="text" id="last-name" spellcheck="false" ></input>
+             
+            <p class="form-label">E-mail:</p>
+            <input class="text" id="email" spellcheck="false" ></input>
+             
+            <p class="form-label">Numero de tarjeta:</p>
+            <input class="text" id="card-number" autocomplete="off" ></input>
+             
+            <p class="form-label">Fecha de vencimiento:</p>
+            <select id="expiration-month">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Augosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Deciembre</option>
+            </select>
+             
+            <select id="expiration-year">
+                <?php
+                    $yearRange = 70;
+                    $thisYear = date('Y');
+                    $startYear = ($thisYear + $yearRange);
+                 
+                    foreach (range($thisYear, $startYear) as $year)
+                    {
+                        if ( $year == $thisYear) {
+                            print '<option value="'.$year.'" selected="selected">' . $year . '</option>';
+                        } else {
+                            print '<option value="'.$year.'">' . $year . '</option>';
+                        }
+                    }
+                ?>
+            </select>
+             
+            <p class="form-label">Codigo:</p>
+            <input class="text" id="card-security-code" autocomplete="off" class="entradas"></input>
+             
+            <input id="buy-submit-button" type="submit" value="paso 1" onclick="valida();"></input>
+
+	    
+</div>
+        </form>
+    </body>
+</html>
