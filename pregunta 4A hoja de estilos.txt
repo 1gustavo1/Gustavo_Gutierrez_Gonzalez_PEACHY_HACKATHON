@@ -72,25 +72,4 @@ border-bottom:5px solid black;
 input:hover{
 background-color:orange; 
   color: white; 
-
-/*PAGINAS
-CSS
-http://www.mclibre.org/consultar/amaya/css/css_pseudoclases.html
-
-REDIREC
-http://blog.vermiip.es/2013/07/17/redireccionar-una-pagina-web-html-asp-javascript-y-php/
-
-CORREOS
-http://stackoverflow.com/questions/10830311/mailchimp-merge-vars-what-else-is-accepted-apart-from-fname-lname
-http://truelogic.org/wordpress/2012/07/28/integrate-the-mailchimp-api-with-your-php-application/
-
-
-STRIPE
-
-www.google.com.mx/url?sa=t&rct=j&q=&esrc=s&source=web&cd=10&ved=0CHYQFjAJ&url=http%3A%2F%2Fcode.tutsplus.com%2Ftutorials%2Fso-you-want-to-accept-credit-cards-online--net-25457&ei=T1eAU8CMAoGRqgaCh4BA&usg=AFQjCNGlAPc8x55JKmvezsiDJFx7avzR_g&sig2=LuIuJkzjW2NRCKSZJOe9TA&bvm=bv.67720277,d.b2k
-
-
-
-
-
 }
