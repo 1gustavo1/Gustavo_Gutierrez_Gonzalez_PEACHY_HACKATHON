@@ -1,0 +1,44 @@
+Proveedores de pago
+
+PayPal
+Es una empresa orientada al comercio electrónico, que permite a los usuarios hacer pagos a través de internet limitando la información financiera al vendedor. Entre los principales servicios esta:
+pagos en línea
+enviar dinero
+envió de dinero a otros países
+recibir pagos
+es uno de los servicios más seguros
+Es una forma rápida y segura de pagar, en millones de tiendas en todo el mundo, además no hay necesidad de proporcionar los datos de la tarjeta de crédito o débito, lo único que se hace es tener una cuenta de email y una contraseña. PayPal es una cuenta que recarga con el saldo de cuentas corrientes de casi cualquier banco físico, los datos financieros solo se dan a PayPal  y a nadie más.
+
+Google checkout
+Es un servicio de pago en línea, además es gratuito, y permite simplificar el proceso de pago por compras en línea, el proceso es: los usuarios almacenan su tarjeta y la información en su cuenta de google y estos pueden comprar en tiendas que tienen el servicio con solo un clic, además ofrece protección contra fraudes.
+El costo de checkout es gratuito, solo se paga por compras, impuestos y gastos de envió con la moneda que el vendedor use.
+
+2Checkout
+Es el centro de distribución de más de un millón de productos, los negocios Web aceptan vender sus productos y servicios  para reventa, solo se tiene que ingresar los productos o servicios a una base de datos  y cuando los compradores hacen clic en los vínculos para pagar  se gestiona la venta en un entorno seguro, lo contrata proveedor para concretar la venta y deposita el pago a la cuenta.
+API: La API de administración de 2Checkout ofrece una manera de automatizar los procesos de gestión de pedidos. La API de administración funciona junto con el Servicio de notificación instantánea que alivia la necesidad de iniciar sesión en la interfaz estándar.
+
+
+
+
+
+
+
+Proveedores de envió
+FedEx
+FedEx ofrece una extensa gana de servicios y herramientas para envió en México y envíos internacionales, puede enviar documentos, cajas o fletes, la entrega es rápida y confiable en más de 220 destinos en todo el mundo.
+La API FedEx Direct Connect PHP se desarrolló para facilitar la integración para llevar las capacidades de envió y rastreo de FedEx en servicios de aplicaciones PHP, permitirá enviar mediante SSL, seguimiento, tasa y disponibilidad de servicios de transmisiones a servidores de transacciones de FedEx, se diseñó para ser usada con Ship Manager.
+DHL
+Es un servicio de entregas expres y envíos internacionales, permite envíos, rastreos  etc.
+API: Permite realizar peticiones de envió de DHL a través de la web, se compone de una petición de envió donde se ponen todos los detalles, después se obtienen las tarifas para envió y enviar la solicitud de envió, edemas te permite cancelar el envió.
+
+Proveedor de correos
+Aweber
+Es un servicio de paga, donde con 500 suscriptores cuesta $19 al mes, este servicio es mejor que mailchimp porque, mailchimp a partir de los 2000 suscriptores te empieza a cobrar, mientras que Aweber ofrece planes económicos. Permite incluir enlaces afiliados en los correos dirigidos a nuestra lista. También permite usar auto respondedor. Finalmente tiene una alta probabilidad de que en el envío de correos masivos no terminaran en SPAM.
+Mandrill
+Es un servicio de envío de correos  de infraestructura escalabra y asequible con todas las herramientas de análisis de la comercialización. Se considera mejor que MailChimp.
+Sendgrid
+SendGrid ofrece un servicio de entrega de correo electrónico basado en la nube que ayuda a las empresas con la gestión del correo electrónico transaccional, el servicio gestiona varios tipos de correo electrónico que incluyen avisos de entrega, solicitudes de amistad, inscribirse confirmaciones, y boletines por correo electrónico.
+
+Recomendaciones
+Con la información recabada propondría que se usara el servicio Google Checkout para México ya que este tiene una API que puede implementarse muy bien además que google te brinda una alta seguridad y permite que el cliente ahorre tiempo en el proceso de pago. Por otra parte para el servicio de envío no hay mucha opción ya que en México no hay demasiadas empresas dedicadas a brindar este servicio pero con la información recabada sería buena opción usar FedEx, su API no es muy documentada lo cual sería uno de los problemas pero el código que trae su librería es entendible por lo que se podría implementar además realiza el servicio de envío en todo el país y en el extranjero por lo que si la empresa creciera mucho sería un proveedor bueno para la empresa.
+Finalmente para el servicio de correos recomendaría usar Aweber ya que permite fácilmente distribuir correos y además es escalable y económico, para una empresa en crecimiento serviría mucho tener un sistema de correo robusto por lo que Aweber sería buena opción.
