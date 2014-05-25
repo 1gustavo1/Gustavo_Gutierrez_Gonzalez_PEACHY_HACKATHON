@@ -1,0 +1,4 @@
+3. Explica en menos de 20 palabras que es un lenguaje de programación
+
+Lenguaje de programación
+Es un lenguaje formal diseñado para expresar procesos que puedan ser realizados por una maquina.
